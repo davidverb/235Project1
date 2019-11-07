@@ -1,0 +1,17 @@
+@mixin linear-gradient-session {
+    background: #77C9D4;
+    background: -moz-linear-gradient(left, rgb(135, 209, 151) 0%, rgb(69, 153, 117) 100%);
+    background: -webkit-linear-gradient(left, rgb(135, 209, 151) 0%, rgb(69, 153, 117) 100%);
+    background: linear-gradient(to right, rgb(135, 209, 151) 0%, rgb(69, 153, 117) 100%);
+}
+
+@mixin screen-type ($pix) {
+
+    @if $pix > $minWidth {
+       @media only screen and (min-width: $pix) {@content;}
+    }
+
+    @else {
+       @media only screen and (max-width: $maxWidth) {@content;}
+    }
+}

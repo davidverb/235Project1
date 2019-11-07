@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Contact Me Website
+    Author: David Verbeck
+    Updated: 9-8-19
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall2018 Portfolio</title>
+    <link href="B_Css/style3.css" rel="stylesheet" />
+    <link href="B_Css/form.css" rel="stylesheet" />
+    <script src="js/port_formsubmit.js"></script>
+</head>
+<body>
+<header>
+    <h1>Happy Hound</h1>
+    <img src="Images/paw_2_40.png" id="paw" alt=""/>&nbsp;&nbsp;<img src="Images/Happy pup 1.jpg" alt="Photo of Happy Dog" />&nbsp;&nbsp;<img src="Images/paw_2_40.png" id="paw" alt=""/>
+    <h2>Activity Center</h2>
+        <nav>
+            <ul>
+                <li><a href="B_Discrip.html">Main</a></li>
+                <li><a href="B_Newsletter.html">Newsletter</a></li>
+                <li><a href="Adminlogin.php">Admin</a></li>
+            </ul>
+        </nav>
+</header>
+<section>
+    <article> 
+        <p><strong>If you have any questions or comments, please fill out our contact form:</strong></p>
+        <form action="contact_confirm.php" method="post">
+            <div>
+                <label for="nameFirst">First Name: </label>
+                <input name="fname" id="nameFirst" type="text" />
+            </div>
+            <br>
+            <div>
+                <label for="nameLast">Last Name: </label>
+                <input name="lname" id="nameLast" type="text" />
+            </div>
+            <br>
+            <div>
+                <label for="emailBox">E-Mail: </label>
+                <input name="email" id="emailBox" type="email" />
+            </div>
+            <br>
+
+            <fieldset id="textBox">
+                <legend>Comment Box</legend>
+                <textarea id="commBox" name="commBox" placeholder="Enter text here"></textarea>
+            </fieldset>
+            <br>
+            <div>
+                <button>
+                    <input type="submit" value ="Send" />
+                </button>
+            </div>
+        </form>
+        
+    </article>
+</section>
+<footer>
+        <p>To email us,&nbsp;<a href="mail:davidverb2@gmail.com">Click Here</a></p>
+</footer>
+</body>
+</html>

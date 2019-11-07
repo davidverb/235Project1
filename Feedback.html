@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Commenting Website
+    Author: David Verbeck
+    Date: 10-22-2019
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall2014 Portfolio</title>
+    <link href="Css/Styles1.css" rel="stylesheet" />
+    <link href="Css/forms.css" rel="stylesheet" />
+</head>
+
+<body>
+    <aside>
+      <div class="siteSidebar">
+          <div class="photo">
+            <img src="Images/Photo1.png" alt="Self-Photo">
+          </div>
+          <div class="">
+            <h1>David Verbeck</h1>
+          </div>
+
+        <nav class="siteNav">
+                        
+            <a href="https://www.linkedin.com/" ><img src="Images/linkedinIcon.png" alt="Linkedin" /></a>
+
+            <a href="https://github.com/davidverb?tab=repositories" ><img src="Images/GithubIcon.png" alt="Github" /></a>
+
+          <div class="siteNav">
+            <ul>
+                <li><a href="Index.html">Home</a>&nbsp;</li>
+                <li><a href="About.html">About</a>&nbsp;</li>
+                <li><a href="Hist.html">Experience</a>&nbsp;</li>
+                <li><a href="Contact.html">Contact Me</a>&nbsp;</li>
+                <li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="Buisness_html/B_Discrip.html">Buisness Project</a></li>
+            </ul>
+          </div>
+        </nav>      
+    </div>        
+    </aside>
+    <article>
+    <form action="feedback_confirm.php" method="post">
+            <div>
+                <label for="nameFirst">First Name: </label>
+                <input name="fname" id="nameFirst" type="text" />
+            </div>
+            <br>
+            <div>
+                <label for="nameLast">Last Name: </label>
+                <input name="lname" id="nameLast" type="text" />
+            </div>
+            <br>
+            <div>
+                <label for="emailBox">E-Mail: </label>
+                <input name="email" id="emailBox" type="email" />
+            </div>
+            <br>
+               
+                <textarea id="commBox" name="commBox" placeholder="Enter feedback here"></textarea>
+
+            <br>
+            <div>
+            
+                    <input type="submit" value ="Send" />
+
+                    
+            </div>
+        </form>
+    </article>
+    
+    <footer>
+        <p>Email at &nbsp;<a href="mail:davidverb2@gmail.com">davidverb2@gmail.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/*
+    Website Style 1 Css file
+
+    Author: David Verbeck
+    Date: 12-5-18
+*/
+
+aside {
+    display: flex;
+    background-color: rgba(38,206,178,0.69);
+    position: relative;
+    float: left;
+    width: auto;
+    margin: -1%;
+    padding-bottom: 16.1%;
+    text-align: center;
+    border: solid black 2px;
+    
+}
+
+article {
+    background-color:  rgba(240, 245, 245,0.8);
+    display: block;
+    position: absolute;
+    width: 75%;
+    left: 300px;
+    top: 100px;
+    border: solid black 2px;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+div.siteNav > ul {
+    font-size: 1.4em;
+    text-align: left;
+    list-style-type: square;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+article > h1 {
+    font-size: 2em;
+}
+
+article > p {
+    font-size: 1.5em;
+}
+
+article > ul {
+    font-size: 1.5em;
+    text-align: center;
+    list-style: none;
+}
+
+body {
+    background-image: url(../Images/Forest_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+footer {
+    display: block;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    text-align: center;
+    background: #26CEB2;
+    background: -moz-linear-gradient(left, #26CEB2 0%, #F0F5F5 100%);
+    background: -webkit-linear-gradient(left, #26CEB2 0%, #F0F5F5 100%);
+    background: linear-gradient(to right, #26CEB2 0%, #F0F5F5 100%);
+}
+
+textarea {
+    width: 90%;
+    height: 140px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*======================================
+   Mobile Styles
+  ======================================*/
+@media screen and (max-width: 425px) {
+    
+    aside {
+        display: block;
+        padding: 10px;
+        background-color: rgb(38,206,178);
+        border: solid black 2px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    div.siteNav > ul {
+        list-style-type: none;
+        display: inline-flex;
+        font-size: 1em;
+    }
+    
+    body {
+        background-color: white;
+        background-image: none;
+        width: 100%;
+        
+    }
+    
+    body > article {
+        display: block;
+        background-color:  rgb(61, 247, 117);
+        left: -4px;
+        top: 382px;
+        border: solid black 2px;
+        width: 90.9%;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    article > h1 {
+        font-size: 2em;      
+    }
+
+    article > p {
+        font-size: 1.5em;
+    }
+    
+    footer {
+        display: block;
+        position: absolute;
+        
+        width: 105%;
+        border: solid black 2px;
+        text-align: center;
+        background: #26CEB2;
+        background: -moz-linear-gradient(left, #26CEB2 0%, #F0F5F5 100%);
+        background: -webkit-linear-gradient(left, #26CEB2 0%, #F0F5F5 100%);
+        background: linear-gradient(to right, #26CEB2 0%, #F0F5F5 100%);
+    }
+}

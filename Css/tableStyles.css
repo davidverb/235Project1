@@ -1,0 +1,116 @@
+/*
+    Website  Table Style 1 Css file
+
+    Author: David Verbeck
+    Date: 12-5-18
+*/
+
+
+table.schoolExp {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 75%;
+  text-align: left;
+  border-collapse: collapse;
+  padding-left: 50px;
+  padding-bottom: 150px;
+  margin: auto;
+  margin-bottom: 70px; 
+}
+table.schoolExp td, table.schoolExp th {
+  border: 1px solid #AAAAAA;
+  padding: 10px 40px;
+}
+table.schoolExp tbody td {
+  font-size: 13px;
+}
+table.schoolExp tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.schoolExp thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #444444;
+}
+table.schoolExp thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table.schoolExp thead th:first-child {
+  border-left: none;
+}
+
+table.schoolExp tfoot td {
+  font-size: 14px;
+}
+table.schoolExp tfoot .links {
+  text-align: right;
+}
+table.schoolExp tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+/*======================================
+   Mobile Styles
+  ======================================*/
+@media screen and (max-width: 425px) {
+table.schoolExp {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 75%;
+  text-align: left;
+  border-collapse: collapse;
+  padding-left: 50px;
+  padding-bottom: 150px;
+  margin: auto;
+  margin-bottom: 70px; 
+}
+table.schoolExp td, table.schoolExp th {
+  border: 1px solid #AAAAAA;
+  padding: 10px 40px;
+}
+table.schoolExp tbody td {
+  font-size: 13px;
+}
+table.schoolExp tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.schoolExp thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #444444;
+}
+table.schoolExp thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table.schoolExp thead th:first-child {
+  border-left: none;
+}
+
+table.schoolExp tfoot td {
+  font-size: 14px;
+}
+table.schoolExp tfoot .links {
+  text-align: right;
+}
+table.schoolExp tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+}

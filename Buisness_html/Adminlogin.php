@@ -1,0 +1,75 @@
+<?php
+/********************************************************************/
+/*  Date	Name	Description                                 */
+/*  --------------------------------------------------------------- */
+/*                                                                  */
+/*  9/13/2019  David Verbeck   creation of login page               */
+/********************************************************************/
+
+$action = filter_input(INPUT_POST, 'action');
+$username = filter_input(INPUT_POST, 'username');
+$password = filter_input(INPUT_POST, 'password');
+
+if ($action == NULL){
+    echo $action;
+} else if (empty($username) || empty($password)) {
+    header ("Location: Adminlogin.php");
+} else {
+    header ("Location: Admin.php");
+}
+
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall2018 Portfolio</title>
+    <link href="B_Css/style3.css" rel="stylesheet" />
+    <link href="B_Css/form.css" rel="stylesheet" />
+    <script src="js/port_formsubmit.js"></script>
+</head>
+<body>
+<header>
+    <h1>Happy Hound</h1>
+    <img src="Images/paw_2_40.png" id="paw" alt=""/>&nbsp;&nbsp;<img src="Images/Happy pup 1.jpg" alt="Photo of Happy Dog" />&nbsp;&nbsp;<img src="Images/paw_2_40.png" id="paw" alt=""/>
+    <h2>Activity Center</h2>
+        <nav>
+            <ul>
+                <li><a href="B_Discrip.html">Main</a></li>
+                <li><a href="B_Newsletter.html">Newsletter</a></li>
+                <li><a href="B_contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+</header>
+
+<section>
+    <article>
+  <h2>Admin Login</h2>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <form name="form1" action="admin.php" method="post">
+      <div>
+            <label for="username">Username: </label>
+            <input name="username"  type="text" required/>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password: </label>
+            <input name="password" type="text" required/>
+            <input type="hidden" name="action" value="action" >
+        </div>
+        <br>
+        <input type="submit" value ="Send" />
+  </form>
+  <p>&nbsp;</p>
+    </article>
+</section>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<h2>&nbsp;</h2>
+</body>
+</html>

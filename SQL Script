@@ -1,0 +1,58 @@
+# ! feedback page portfolio !
+
+# createing database
+CREATE DATABASE IF NOT EXISTS davecontactdb;
+
+USE davecontactdb;
+
+DROP TABLE contacts;
+
+# createing table for feedback page (contact page)
+CREATE TABLE feedback (
+    visitID			INT					NOT NULL	AUTO_INCREMENT,
+    fname			VARCHAR(60)			NOT NULL,
+    lname			VARCHAR(60)			NOT NULL,
+    commBox			TEXT				NOT NULL,
+    
+    PRIMARY KEY (visitID),
+    UNIQUE INDEX visitIDX (visitID)
+);
+
+
+
+<-------------------------------------------------------------------------------------->
+# ! Buisness project !
+
+
+# createing database
+CREATE DATABASE IF NOT EXISTS dave_buisnessdb;
+
+USE dave_buisnessdb;
+
+# create contact page table
+Create TABLE IF NOT EXISTS contact 
+(
+    feedID			INT					NOT NULL	AUTO_INCREMENT,
+    fname			VARCHAR(60)			NOT NULL,
+    lname			VARCHAR(60)			NOT NULL,
+    email			VARCHAR(160)		NOT NULL,
+    commBox 		TEXT				NOT NULL,
+    
+    # create Index/ prrimary Key for table
+    PRIMARY KEY (feedID),
+    UNIQUE INDEX email (email)
+);
+
+
+# Create Feedback Page table
+Create TABLE IF NOT EXISTS newsletter
+(
+    visitID			INT					NOT NULL	AUTO_INCREMENT,
+    fname			VARCHAR(60)			NOT NULL,
+    lname			VARCHAR(60)			NOT NULL,
+    email			VARCHAR(160)		NOT NULL,
+    
+    # create Index/ prrimary Key for table  
+    PRIMARY KEY (visitID),
+    INDEX email (email)
+);

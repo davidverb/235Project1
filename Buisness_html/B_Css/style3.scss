@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/*
+    Style3.css
+    author: David Verbeck
+    updated:2-11-19
+*/
+
+@import '_variables.scss';
+@import '_mixins.scss'; 
+
+html {
+    display: block;
+    background: $primary-use-color;
+}
+
+body {
+    display: block;
+}
+
+header {
+    text-align: center;
+    background: $primary-use-color;
+     
+
+    h1 {
+        font-size: 2.6em;
+    }
+ 
+    h2 {
+        font-size: 2.4em;
+    }
+
+    figure {
+        border: $primary-border-style;
+    }
+
+    img#paw {
+            animation: shrink 5s linear 5s infinite;        
+        }
+
+    nav {
+        display: block;
+        background: $secondary-use-color;
+        border: $primary-border-style;
+        border-radius: 15px;
+        padding: 1px;
+
+        
+
+        ul {
+            list-style-image: url('../Images/paw.png');
+            
+
+            li{
+                display: inline;
+                padding: 100px;
+                text-align: center;
+                font-size: 1.4em;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+                                    
+    
+}
+
+@keyframes shrink {
+    0% {transform: scale(1,1);}
+    25% {transform: scale(.75,.75);}
+    50% {transform: scale(0.5,0.5);}
+    75% {transform: scale(.75,.75);}
+   100% {transform: scale(1,1);} 
+}
+
+section {
+    display: block;
+    margin-bottom: 50px;
+    
+    article {
+        padding-left: 10px;
+        font-size: 12pt;
+        @include linear-gradient-session;
+        padding-bottom: 50px;
+        border: $primary-border-style;
+        border-radius: 15px;
+
+        p, ul {
+            font-size: 1.3em;
+        }
+
+    }
+}
+
+footer {
+    background: $secondary-use-color;
+    display: block;
+    padding: 1px;
+    text-align: center;
+    color:white;
+    border: $primary-border-style;
+
+}
+
+@include screen-type(0px) {
+    header{
+        display: block;
+        position: relative;
+        text-align: center;
+
+        img#paw {
+            display: none;
+        }
+        
+        nav {
+            display: block;
+
+            li{
+                display: inline;
+                padding: 50px;
+                position: relative;
+            }
+        }
+
+        
+    }
+    section {
+        display: flex;
+        
+        article {
+
+            table, thead, tbody, tfoot, th, td, tr {
+                display: block;
+            }
+
+            table {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 10%;
+
+
+            }
+        
+        }
+        
+
+       
+    }
+    
+
+}
+
+@include screen-type(481px) {
+    header {
+
+        display: block;
+
+        nav{
+            display: flex;
+            text-align: center;
+            
+            li {
+                margin: 20px 50px;
+            }
+        }
+    }
+
+}
+
+@include screen-type(769px) {
+    header {
+        text-align: center;
+        background: $primary-use-color;
+         
+    
+        h1 {
+            font-size: 2.6em;
+        }
+     
+        h2 {
+            font-size: 2.4em;
+        }
+    
+        figure {
+            border: $primary-border-style;
+        }
+    
+        img#paw {
+                animation: shrink 5s linear 5s infinite;        
+            }
+    
+        nav {
+            display: block;
+            background: $secondary-use-color;
+            border: $primary-border-style;
+            border-radius: 15px;
+            padding: 1px;
+    
+            
+    
+            ul {
+                list-style-image: url('../Images/paw.png');
+                
+    
+                li{
+                    display: inline;
+                    padding: 100px;
+                    text-align: center;
+                    font-size: 1.4em;
+    
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+                                        
+        
+    }
+}
