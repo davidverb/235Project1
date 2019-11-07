@@ -70,7 +70,7 @@
         <nav>
             <ul>
                 <li><a href="B_Discrip.html">Main</a></li>
-                <li><a href="B_Newsletter.html">Newsletter</a></li>
+                <li><a href="B_Newsletter.aspx">Newsletter</a></li>
                 <li><a href="Adminlogin.php">Admin</a></li>
             </ul>
         </nav>

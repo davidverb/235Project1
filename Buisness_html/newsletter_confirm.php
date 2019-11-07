@@ -65,7 +65,7 @@
         <nav>
             <ul>
                 <li><a href="B_Discrip.html">Main</a></li>
-                <li><a href="B_Contact.html">Contact</a></li>
+                <li><a href="B_Contact.aspx">Contact</a></li>
             </ul>
         </nav>
 </header>
